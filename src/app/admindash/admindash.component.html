@@ -1,0 +1,60 @@
+<button mat-raised-button color="primary"  (click)="logout()">Logout</button>   
+<mat-card class="card-block">
+<table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+
+  
+  <!-- Service Id Column -->
+  <ng-container matColumnDef="id">
+    <th mat-header-cell *matHeaderCellDef>Service  Id </th>
+    <td mat-cell *matCellDef="let element"> {{element.id}} </td>
+  </ng-container>
+
+  <!-- Username Column -->
+  <ng-container matColumnDef="userId">
+    <th mat-header-cell *matHeaderCellDef>User Name </th>
+    <td mat-cell *matCellDef="let element"> {{element.userId}} </td>
+  </ng-container>
+
+  <!-- brand Column -->
+  <ng-container matColumnDef="brand">
+    <th mat-header-cell *matHeaderCellDef> Brand </th>
+    <td mat-cell *matCellDef="let element"> {{element.brand}} </td>
+  </ng-container>
+
+  <!-- Car Column -->
+  <ng-container matColumnDef="CarName">
+    <th mat-header-cell *matHeaderCellDef> Car </th>
+    <td mat-cell *matCellDef="let element"> {{element.CarName}} </td>
+  </ng-container>
+
+  <!-- car service Status Column -->
+  <ng-container matColumnDef="status">
+      <th mat-header-cell *matHeaderCellDef> Car </th>
+      <td mat-cell *matCellDef="let row" >
+          <div *ngIf="row.status=='Done'; else dropdown">
+              {{row.status}}           
+          </div>  
+          <ng-template #dropdown>
+                <mat-form-field>
+                    <mat-label>Status</mat-label>
+                    <mat-select   (selectionChange)="onselect($event.value,row.id,row.userId)" >
+                      <mat-option *ngFor="let status of statusList" [value]="status" >
+                        {{status}}
+                      </mat-option>
+                    </mat-select>
+                  </mat-form-field>      
+          </ng-template>
+      </td>
+    </ng-container>
+  
+    <ng-container  matColumnDef="invoice" >
+          <th mat-header-cell *matHeaderCellDef> Invoice </th>
+          <td mat-cell *matCellDef="let row" >
+              <button [id]="row.userId+row.id" style="visibility:hidden" mat-raised-button color="primary"  (click)="create_invoice(row)">invoice</button>   
+          </td>
+    </ng-container>
+
+  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+  <tr mat-row *matRowDef="let row; columns: displayedColumns;"  ></tr>
+</table>
+</mat-card>

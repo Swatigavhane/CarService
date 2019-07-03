@@ -1,0 +1,35 @@
+{
+    "Login": [
+        {  "Name": "Abc", "pass":"Abc" },
+        {  "Name": "xyz", "pass":"xyz" }
+      ],
+      
+    "brands": [
+      {  "Name": "Jeep" },
+      {  "Name": "Mahindra" },
+      {  "Name": "Force Motors" },
+      {  "Name": "Tata" }
+    ],
+    "Car-Name": [
+      { "brand":"Tata", "Car-Name": "Harrier" },
+      { "brand":"Tata", "Car-Name": "Nexon" },
+      { "brand":"Tata", "Car-Name": "Tata Hexa" },
+      { "brand":"Tata", "Car-Name": "Tata Tiago" },
+      { "brand":"Tata", "Car-Name": "Tata Zest" },
+      { "brand":"Mahindra", "Car-Name": "XUV300" },
+      { "brand":"Mahindra", "Car-Name": "Scorpio" },
+      { "brand":"Jeep", "Car-Name": "Patriot" },
+      { "brand":"Jeep", "Car-Name": "Compass" },
+      { "brand":"Force Motors", "Car-Name": "SUV EX" },
+      { "brand":"Force Motors", "Car-Name": "SUV LX" }
+    ],
+    "Client-service":[
+        {"brand":"Force Motors", "Car-Name": "SUV EX" , "status":"Pending" }
+    ],
+
+    "Admin-Data":[
+        {"ClientName":"Swati","brand":"Force Motors", "Car-Name": "SUV EX" , "status":"Pending" }
+    ]
+
+     
+  }

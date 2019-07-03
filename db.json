@@ -1,0 +1,184 @@
+{
+  "Login": [
+    {
+      "Name": "Abc",
+      "pass": "Abc"
+    },
+    {
+      "Name": "user2",
+      "pass": "user2"
+    },
+    {
+      "Name": "admin123",
+      "pass": "admin123"
+    }
+  ],
+  "Car-brands": [
+    {
+      "Name": "Jeep"
+    },
+    {
+      "Name": "Mahindra"
+    },
+    {
+      "Name": "Force Motors"
+    },
+    {
+      "Name": "Tata"
+    }
+  ],
+  "Car-Name": [
+    {
+      "id": "Tata",
+      "CarName": [
+        "Harrier",
+        "Nexon",
+        "Tata Hexa",
+        "Tata Tiago",
+        "Tata Zest"
+      ]
+    },
+    {
+      "id": "Mahindra",
+      "CarName": [
+        "XUV300",
+        "Scorpio"
+      ]
+    },
+    {
+      "id": "Jeep",
+      "CarName": [
+        "Patriot",
+        "Compass"
+      ]
+    },
+    {
+      "id": "Force Motors",
+      "CarName": [
+        "SUV EX",
+        "SUV LX"
+      ]
+    }
+  ],
+  "Client-service": [
+    {
+      "id": 1,
+      "userId": "Abc",
+      "brand": "Force Motors",
+      "CarName": "SUV EX",
+      "status": "Done",
+      "invoice": "1"
+    },
+    {
+      "id": 2,
+      "userId": "Abc",
+      "brand": "Tata",
+      "CarName": "Tata Tiago",
+      "status": "Done",
+      "invoice": "1"
+    },
+    {
+      "id": 3,
+      "userId": "Abc",
+      "brand": "Force Motors",
+      "CarName": "SUV EX",
+      "status": "Done",
+      "invoice": "1"
+    },
+    {
+      "id": 4,
+      "userId": "Abc",
+      "brand": "Jeep",
+      "CarName": "Compass",
+      "status": "Done",
+      "invoice": "1"
+    },
+    {
+      "userId": "Abc",
+      "brand": "Tata",
+      "CarName": "Tata Tiago",
+      "status": "pending",
+      "invoice": "0",
+      "id": 5
+    },
+    {
+      "id": 6,
+      "userId": "user2",
+      "brand": "Jeep",
+      "CarName": "Patriot",
+      "status": "Done",
+      "invoice": "1"
+    },
+    {
+      "userId": "undefined",
+      "brand": "Tata",
+      "CarName": "Nexon",
+      "status": "pending",
+      "invoice": "0",
+      "id": 7
+    },
+    {
+      "id": 8,
+      "userId": "user2",
+      "brand": "Force Motors",
+      "CarName": "SUV LX",
+      "status": "Done",
+      "invoice": "1"
+    },
+    {
+      "userId": "user2",
+      "brand": "Tata",
+      "CarName": "Nexon",
+      "status": "pending",
+      "invoice": "0",
+      "id": 9
+    },
+    {
+      "userId": "Abc",
+      "brand": "Jeep",
+      "CarName": "Patriot",
+      "status": "pending",
+      "invoice": "0",
+      "id": 10
+    },
+    {
+      "userId": "user2",
+      "brand": "Force Motors",
+      "CarName": "SUV LX",
+      "status": "pending",
+      "invoice": "0",
+      "id": 11
+    }
+  ],
+  "invoice": [
+    {
+      "id": 1,
+      "amount": 300
+    },
+    {
+      "ser_id": 2,
+      "amount": "600",
+      "id": 2
+    },
+    {
+      "ser_id": 8,
+      "amount": "1000",
+      "id": 3
+    },
+    {
+      "ser_id": 6,
+      "amount": "600",
+      "id": 4
+    },
+    {
+      "ser_id": 3,
+      "amount": "450",
+      "id": 5
+    },
+    {
+      "ser_id": 4,
+      "amount": "400",
+      "id": 6
+    }
+  ]
+}

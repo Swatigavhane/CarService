@@ -1,0 +1,34 @@
+<button mat-button [matMenuTriggerFor]="menu" class="menus">Client</button>
+<mat-menu #menu="matMenu">
+  <button mat-menu-item routerLink="/Client/DashBorad">Client DashBoard</button>
+  <button mat-menu-item routerLink="/Client/Service">Service status DashBorad</button>
+  <button mat-menu-item routerLink=# color="primary"  (click)="logout()">Logout</button>   
+</mat-menu>
+<br>
+<br>
+
+<!-- Get the list of brand of cars -->
+<mat-card class="card-block">
+<mat-form-field>
+  <mat-label>Brands</mat-label>
+  <mat-select (selectionChange)="ShowCarList($event.value)"  >
+    <mat-option *ngFor="let brand of BrandsList" [value]="brand.Name">
+      {{brand.Name}}
+    </mat-option>
+  </mat-select>
+</mat-form-field> 
+&nbsp;&nbsp;&nbsp;&nbsp;
+
+<!-- Get the list of cars of selected brand -->
+<mat-form-field>
+  <mat-label>Cars</mat-label>
+  <mat-select (selectionChange)="getSelectedCar($event.value)" >
+    <mat-option *ngFor="let car of carList" [value]="car">
+      {{car}}
+    </mat-option>
+  </mat-select>
+</mat-form-field>
+&nbsp;&nbsp;&nbsp;&nbsp;
+<br>
+<button mat-raised-button color="primary" (click)="submit_data()">Submit</button>
+</mat-card>

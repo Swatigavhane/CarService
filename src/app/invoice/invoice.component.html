@@ -1,0 +1,19 @@
+<mat-dialog-content>
+
+  <!-- Dialoge to show service receipt details -->
+  <h3>Client Name:{{d.userId}}</h3>
+  <h3>Brand:{{d.brand}}</h3>
+  <h3>Car Name:{{d.CarName}}</h3>
+  <mat-form-field>
+      <input matInput
+              [(ngModel)]="value"
+              placeholder="Amount"
+             >
+  </mat-form-field>
+
+</mat-dialog-content>
+<mat-dialog-actions>
+  <button class="mat-raised-button mat-primary"(click)="save()">Save</button>
+  <button class="mat-raised-button mat-primary"(click)="close()">close</button>
+</mat-dialog-actions>
+
